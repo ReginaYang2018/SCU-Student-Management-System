@@ -1,0 +1,17 @@
+
+<label for="fname">First Name:</label>
+<input id="fname" name="student[fname]" type="text" value= "<%= @student.fname%>" />
+
+<label for="lname">Last Name:</label>
+<input id="lname" name="student[lname]" type="text" value="<%= @student.lname %>" />
+
+<label for="birthday">Students Birthday:</label>
+<input id="birthday" name="student[birthday]" type="date" value="<%= @student.birthday %>"/>
+
+<label for="address">Students Address:</label>
+<input id="address" name="student[address]" type="text" value="<%= @student.address%>" />
+
+<label for="sid">Students Id:</label>
+<input id="sid" name="student[sid]" type="text" value="<%= @student.sid%>" />
+
+<input type="submit" value="Save this student" />

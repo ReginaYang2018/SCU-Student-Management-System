@@ -1,0 +1,8 @@
+<a href="/comments/new">Create a new Comment</a>
+<% if @comments.any?
+ %><ul id="comments">
+<% @comments.each do |comment|
+ %><li><a href="/comments/<%= comment.id %>"> <%= comment.comment %> - <%= comment.created_at %></a></li>
+<% end %></ul><% else
+ %><p>No comments created yet!</p>
+<% end %>
