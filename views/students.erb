@@ -1,0 +1,9 @@
+<h1>Student Information</h1>
+<a href="/students/new">Input New Student Info</a>
+<% if @student.any?
+ %><ul id="students">
+<% @student.each do |student|
+ %><li><a href="/students/<%= student.id%>"><%=student.fname%><%= student.lname %><%= student.birthday%><%= student.address%><%= student.sid %></a></li>
+<% end %></ul><% else
+ %><p>No student created yet!</p>
+<% end %>
